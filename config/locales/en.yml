@@ -23,6 +23,7 @@ en:
   not_found: User Is Not Found
   title: "Ruby on Rails Tutorial Sample App"
   user_success_message: "Welcome to the Sample App!"
+  authen_fail: "Invalid email/password combination"
   layouts:
     footer:
       the: "The"
@@ -37,6 +38,12 @@ en:
       home: "Home"
       help: "Help"
       log_in: "Log in"
+      user: "Users"
+      profile: "Profile"
+      setting: "Settings"
+      log_out: "Log out"
+      delete: "delete"
+      account: "Account"
   static_pages:
     home:
       welcome_statement: "Welcome to the Sample App"
@@ -76,3 +83,8 @@ en:
     error_messages:
       error: "error"
       the_form: "The form contains"
+  sessions:
+    new:
+      log_in: "Log in"
+      sign_up_now: "Sign up now!"
+      new_user: "New user?"
