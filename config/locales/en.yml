@@ -39,6 +39,8 @@ en:
   micropost_created: "Micropost created!"
   micropost_deleted: "Micropost deleted"
   should_be: "should be less than 5MB"
+  following: "Following"
+  followers: "Followers"
   layouts:
     footer:
       the: "The"
@@ -108,6 +110,13 @@ en:
       you_sure: "You sure?"
     show:
       micropost: "Microposts"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      view_my_profile: "view my profile"
+      micropost: "Microposts"
   shared:
     error_messages:
       error: "error"
@@ -117,6 +126,9 @@ en:
       post: "Post"
     user_info:
       view_my_profile: "view my profile"
+    stats:
+      following: "following"
+      followers: "followers"
   sessions:
     new:
       log_in: "Log in"

@@ -44,13 +44,27 @@ class UsersController < ApplicationController
   end
 
   def index
-    @users = User.page(params[:page]).order("created_at ASC")
+    @users = User.page(params[:page]).order(created_at: :ASC)
   end
 
   def destroy
     User.find_by(id: params[:id]).destroy
     flash[:success] = I18n.t ".delete_success"
     redirect_to users_url
+  end
+
+  def following
+    @title = I18n.t ".following"
+    @user  = User.find_by id: params[:id]
+    @users = @user.following.page(params[:page]).order(created_at: :DESC)
+    render :show_follow
+  end
+
+  def followers
+    @title = I18n.t ".followers"
+    @user  = User.find_by id: params[:id]
+    @users = @user.followers.page(params[:page]).order(created_at: :DESC)
+    render :show_follow
   end
 
   private
